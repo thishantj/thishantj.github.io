@@ -394,7 +394,7 @@ section2 .container {
     font-weight: 700;
     text-transform: uppercase;
     font-family: "Poppins", sans-serif;
-    color: #000;
+    /* color: #000; */
 }
 
 
@@ -468,7 +468,7 @@ section2 .container {
     font-size: 36px;
     display: block;
     font-weight: 600;
-    color: #000;
+    /* color: #000; */
 }
 
 .counts .count-box p {
@@ -497,7 +497,7 @@ section2 .container {
     display: block;
     font-weight: 600;
     font-family: "Poppins", sans-serif;
-    color: #000;
+    /* color: #000; */
 }
 
 .skills .progress .skill .val {
@@ -636,7 +636,7 @@ section2 .container {
     font-weight: 700;
     margin-top: 20px;
     margin-bottom: 20px;
-    color: #000;
+    /* color: #000; */
 }
 
 .resume2 .resume-item2 {
@@ -699,6 +699,7 @@ section2 .container {
     background: rgba(204, 204, 204, 0.1);
     padding: 80px 20px;
     transition: all ease-in-out 0.3s;
+    border-radius: 30px;
 }
 
 .services .icon-box .icon {
@@ -739,10 +740,6 @@ section2 .container {
     font-size: 24px;
 }
 
-.services .icon-box h4 a {
-    color: rgb(0, 0, 0);
-}
-
 .services .icon-box p {
     line-height: 24px;
     font-size: 14px;
@@ -750,7 +747,7 @@ section2 .container {
 }
 
 .services .icon-box:hover {
-    background: #18d26e;
+    background: #18d26f;
     border-color: #18d26e;
 }
 

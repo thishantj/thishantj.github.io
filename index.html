@@ -43,10 +43,10 @@
                 <li><a href="#resume2" class="nav-link scrollto"><i class="bx bx-briefcase"></i> <span>Experience</span></a></li>
                 <li><a href="#services" class="nav-link scrollto"><i class="bx bx-code-block"></i> <span>Projects</span></a></li>
                 <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+                <li style="cursor: pointer;" onclick="darkmodeFunction()"><a class="nav-link scrollto"><i class="bx bx-moon" id="moonicon"></i></a></li>
             </ul>
         </nav>
         <!-- .nav-menu -->
-
     </header>
     <!-- End Header -->
 
@@ -276,7 +276,7 @@
                         <h3 class="resume-title">Education</h3>
                         <div class="resume-item">
                             <h4>Bachelor of Science (Computing)</h4>
-                            <h5>2018 - 2020</h5>
+                            <h5>2018 - 2021</h5>
                             <p><em>Curtin University Australia</em></p>
 
                             <p>
@@ -538,6 +538,13 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+
+    <script>
+        function darkmodeFunction() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
 
 </body>
 
