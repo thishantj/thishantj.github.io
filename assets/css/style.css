@@ -1049,7 +1049,7 @@
     .contact .php-email-form .sent-message {
         display: none;
         color: #fff;
-        background: #18d26e;
+        background: #00a2ff;
         text-align: center;
         padding: 15px;
         font-weight: 600;
@@ -1069,7 +1069,7 @@
         width: 24px;
         height: 24px;
         margin: 0 10px -6px 0;
-        border: 3px solid #18d26e;
+        border: 3px solid #00a2ff;
         border-top-color: #eee;
         -webkit-animation: animate-loading 1s linear infinite;
         animation: animate-loading 1s linear infinite;

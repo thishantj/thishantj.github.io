@@ -1142,7 +1142,8 @@ progress {
     }
     .col-md-6 {
         flex: 0 0 auto;
-        width: 50%
+        width: 30%;
+        max-width: 33.3333333333%
     }
     .col-md-7 {
         flex: 0 0 auto;
@@ -1300,7 +1301,7 @@ progress {
     }
     .col-lg-3 {
         flex: 0 0 auto;
-        width: 25%
+        width: 33.3333333333%
     }
     .col-lg-4 {
         flex: 0 0 auto;
@@ -7440,6 +7441,10 @@ fieldset:disabled .btn {
     margin-top: .25rem!important
 }
 
+.mt-5 {
+    margin-top: 0rem!important
+}
+
 .mt-2 {
     margin-top: .5rem!important
 }
@@ -7450,10 +7455,6 @@ fieldset:disabled .btn {
 
 .mt-4 {
     margin-top: 1.5rem!important
-}
-
-.mt-5 {
-    margin-top: 3rem!important
 }
 
 .mt-auto {
