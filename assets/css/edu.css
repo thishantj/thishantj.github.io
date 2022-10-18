@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800");
+
+.resume{
+  height: 40rem;
+}
+
+.edu-blog-card{
+  position: absolute;
+  height: 370px;
+  width: 100%;
+  max-width: 90%;
+  margin-left: 2rem;
+  box-shadow: 0px 10px 50px #00a2ff;
+}
+.edu-inner-part{
+  position: absolute;
+  display: flex;
+  height: 360px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 25px;
+  width: 100%;
+}
+#imgTap:checked ~ .edu-inner-part {
+  padding: 0;
+  transition: .1s ease-in;
+}
+.edu-inner-part .edu-img{
+  height: 80%;
+  width: 30%;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+#imgTap:checked ~ .edu-inner-part .edu-img{
+  height: 370px;
+  width: 850px;
+  z-index: 99;
+  margin-top: 10px;
+  transition: .3s .2s ease-in;
+}
+.edu-img img{
+  height: 50%;
+  width: 50%;
+  object-fit: contain;
+  cursor: pointer;
+  opacity: 0;
+  transition: .6s;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.edu-img span{
+  object-fit: cover;
+  cursor: pointer;
+  opacity: 0;
+  transition: .6s;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 15%;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+}
+.edu-img p{
+  object-fit: cover;
+  cursor: pointer;
+  opacity: 0;
+  transition: .6s;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 5%;
+  font-size: 1rem;
+  font-weight: 300;
+  text-align: center;
+  font-style: italic;
+}
+
+#tap-1:checked ~ .edu-inner-part .edu-img-1,
+#tap-2:checked ~ .edu-inner-part .edu-img-2,
+#tap-3:checked ~ .edu-inner-part .edu-img-3,
+#tap-4:checked ~ .edu-inner-part .edu-img-4,
+#tap-5:checked ~ .edu-inner-part .edu-img-5{
+  opacity: 1;
+  transition-delay: .2s;
+}
+#tap-1:checked ~ .edu-inner-part .edu-uni-1,
+#tap-2:checked ~ .edu-inner-part .edu-uni-2,
+#tap-3:checked ~ .edu-inner-part .edu-uni-3,
+#tap-4:checked ~ .edu-inner-part .edu-uni-4,
+#tap-5:checked ~ .edu-inner-part .edu-uni-5{
+  opacity: 1;
+  transition-delay: .2s;
+}
+#tap-1:checked ~ .edu-inner-part .edu-date-1,
+#tap-2:checked ~ .edu-inner-part .edu-date-2,
+#tap-3:checked ~ .edu-inner-part .edu-date-3,
+#tap-4:checked ~ .edu-inner-part .edu-date-4,
+#tap-5:checked ~ .edu-inner-part .edu-date-5{
+  opacity: 1;
+  transition-delay: .2s;
+}
+.edu-content{
+  padding: 0 20px 0 35px;
+  width: 530px;
+  margin-left: 50px;
+  opacity: 0;
+  transition: .6s;
+}
+#imgTap:checked ~ .edu-inner-part .edu-content{
+  display: none;
+}
+#tap-1:checked ~ .edu-inner-part .edu-content-1,
+#tap-2:checked ~ .edu-inner-part .edu-content-2,
+#tap-3:checked ~ .edu-inner-part .edu-content-3,
+#tap-4:checked ~ .edu-inner-part .edu-content-4,
+#tap-5:checked ~ .edu-inner-part .edu-content-5{
+  opacity: 1;
+  margin-left: 0px;
+  z-index: 100;
+  transition-delay: .3s;
+}
+.edu-content span{
+  display: block;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  font-weight: 500
+}
+.edu-content .edu-title{
+  font-size: xx-large;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.edu-content .edu-text{
+  font-size: 19px;
+  margin-bottom: 30px;
+  line-height: 1.5em;
+  text-align: justify;
+}
+.edu-sliders{
+  position: absolute;
+  bottom: 25px;
+  left: 65%;
+  transform: translateX(-50%);
+  z-index: 12;
+}
+#imgTap:checked ~ .edu-sliders{
+  display: none;
+}
+.edu-sliders .tap{
+  position: relative;
+  height: 10px;
+  width: 50px;
+  background: #d9d9d9;
+  border-radius: 5px;
+  display: inline-flex;
+  margin: 0 3px;
+  cursor: pointer;
+}
+.edu-sliders .tap:hover{
+  background: #cccccc;
+}
+.edu-sliders .tap:before{
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: -100%;
+  background: linear-gradient(147deg,#23d7f6 0%, #268df2 74%);
+  border-radius: 10px;
+  transform: scaleX(0);
+  transition: transform .6s;
+  transform-origin: left;
+}
+input[type="radio"],
+input[type="checkbox"]{
+  display: none;
+}
+#tap-1:checked ~ .edu-sliders .tap-1:before,
+#tap-2:checked ~ .edu-sliders .tap-2:before,
+#tap-3:checked ~ .edu-sliders .tap-3:before,
+#tap-4:checked ~ .edu-sliders .tap-4:before,
+#tap-5:checked ~ .edu-sliders .tap-5:before{
+  transform: scaleX(1);
+  width: 100%;
+}
+
+
+@media (max-width: 1025px) {
+  .edu-sliders .tap {
+    width: 45px;
+  }
+}
+
+@media (max-width: 769px) {
+  .edu-sliders .tap {
+    width: 35px;
+  }
+
+  .edu-img span{
+    font-size: 1rem;
+  }
+  .edu-img p{
+    font-size: 0.75rem;
+  }
+
+  .edu-content .edu-text{
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 426px) {
+
+  .edu-blog-card {
+    position: absolute;
+    height: 370px;
+    width: 88%;
+    max-width: 90%;
+    margin-left: 1rem;
+    box-shadow: 0px 10px 30px #00a2ff;
+    border-radius: 10px;
+  }
+
+  .edu-sliders .tap {
+    width: 15px;
+  }
+
+  .edu-content .edu-title {
+    font-size: large;
+  }
+
+  .edu-content span {
+    font-size: 0.8rem;
+  }
+
+  .edu-content .edu-text{
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 376px) {
+  .edu-sliders .tap {
+    width: 12px;
+  }
+
+  .edu-content span {
+    font-size: 0.7rem;
+  }
+
+  .edu-content .edu-text{
+    font-size: 0.7rem;
+  }
+}
