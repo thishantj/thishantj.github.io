@@ -837,6 +837,51 @@ section2 .container {
     }
 }
 
+
+/* Learn about me */
+
+@media (max-width: 769px) {
+    #learnAbtMe{
+        font-size: 150%;
+    }
+}
+
+
+/* My photo */
+
+@media (max-width: 1441px) and (min-width: 1026px){
+    #myPhoto{
+        max-width: 60%;
+        margin-left: 20%;
+    }
+}
+
+@media (max-width: 1025px) {
+    #myPhoto{
+        width: 100%;
+    }
+}
+
+@media (max-width: 769px) {
+    #myPhoto{
+        width: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+/* count */
+
+@media (max-width: 426px) {
+    #count1{
+        width: 33%;
+    }
+}
+
+
+
 /* Contacts */
 
 #contact-address{
