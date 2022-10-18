@@ -836,3 +836,67 @@ section2 .container {
         border-left: 5px solid #dddddd;
     }
 }
+
+/* Contacts */
+
+#contact-address{
+    width: 30%;
+    padding-left: 5%;
+    display: inline-block;
+}
+#contact-email{
+    width: 30%;
+    padding-left: 5%;
+    display: inline-block;
+}
+#contact-tel{
+    width: 30%;
+    padding-left: 5%;
+    display: inline-block;
+}
+
+@media (max-width: 1025px) {
+    #contact-address{
+        width: max-content;
+    }
+
+    #contact-email{
+        width: max-content;
+    }
+
+    #contact-tel{
+        width: max-content;
+    }
+}
+
+@media (max-width: 769px) {
+    #contact-address{
+        width: 100%;
+    }
+
+    #contact-email{
+        width: max-content;
+    }
+
+    #contact-tel{
+        width: max-content;
+        padding-left: 20%;
+    }
+}
+
+@media (max-width: 426px) {
+    #contact-address{
+        width: 100%;
+        padding-left: 5%;
+    }
+
+    #contact-email{
+        width: 100%;
+        padding-left: 5%;
+    }
+
+    #contact-tel{
+        width: 100%;
+        padding-left: 5%;
+    }
+}
