@@ -1120,3 +1120,37 @@
             transform: rotate(360deg);
         }
     }
+
+    #expr{
+        width: 80%;
+    }
+
+    @media (min-width: 768px) {
+        #expr{
+            margin-left: 10%;
+        }
+      }
+
+    @media (max-width: 767px) {
+        #expr{
+            margin-left: 5%;
+        }
+      }
+      
+      @media (max-width: 426px) {
+        #expr{
+            width: 70%;
+            padding-left: 0%;
+            padding-right: 0%;
+            margin-left: 5%;
+        }
+      }
+      
+      @media (max-width: 321px) {
+        #expr{
+            width: 70%;
+            padding-left: 0%;
+            padding-right: 0%;
+            margin-left: 0%;
+        }
+    }

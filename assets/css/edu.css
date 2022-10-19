@@ -254,4 +254,31 @@ input[type="checkbox"]{
   .edu-content .edu-text{
     font-size: 0.7rem;
   }
+
+  .edu-blog-card {
+    margin-left: 0.75rem;
+    box-shadow: 0px 10px 15px #00a2ff;
+  }
+}
+
+@media (max-width: 321px) {
+  .edu-sliders .tap {
+    width: 10px;
+  }
+
+  .edu-img span {
+    font-size: 0.75rem;
+  }
+
+  .edu-img p {
+    font-size: 0.6rem;
+  }
+
+  .edu-content span {
+    font-size: 0.7rem;
+  }
+
+  .edu-content .edu-text{
+    font-size: 0.6rem;
+  }
 }
