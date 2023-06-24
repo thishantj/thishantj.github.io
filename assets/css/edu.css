@@ -11,6 +11,7 @@
   max-width: 90%;
   margin-left: 2rem;
   box-shadow: 0px 10px 50px #00a2ff;
+  border-radius: 20px;
 }
 .edu-inner-part{
   position: absolute;
