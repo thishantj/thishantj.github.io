@@ -34,6 +34,10 @@ section2 .container {
     }
 }
 
+.section-title2{
+    margin-top: 5vh;
+}
+
 .section-title2 h2 {
     font-size: 14px;
     font-weight: 500;
