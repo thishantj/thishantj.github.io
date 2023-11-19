@@ -487,7 +487,7 @@ section2 .container {
     position: relative;
     overflow: hidden;
     z-index: 1;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgb(31, 27, 36);
 }
 
 .portfolio .portfolio-wrap::before {
@@ -899,7 +899,7 @@ section2 .container {
     display: inline-block;
 }
 #contact-tel{
-    width: 30%;
+    width: 33%;
     padding-left: 5%;
     display: inline-block;
 }

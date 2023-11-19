@@ -7,7 +7,6 @@
 
     <title>Thishan - portfolio</title>
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
-    <meta content="" name="description">
     <meta content="" name="keywords">
 
 
@@ -43,12 +42,12 @@
 
         <nav id="navbar" class="navbar nav-menu">
             <ul>
-                <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-                <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-                <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-book-bookmark"></i> <span>Education</span></a></li>
-                <li><a href="#experience" class="nav-link scrollto"><i class="bx bx-briefcase"></i> <span>Experience</span></a></li>
-                <li><a href="#services" class="nav-link scrollto"><i class="bx bx-code-block"></i> <span>Projects</span></a></li>
-                <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+                <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span class="navspan">Home</span></a></li>
+                <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span class="navspan">About</span></a></li>
+                <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-book-bookmark"></i> <span class="navspan">Education</span></a></li>
+                <li><a href="#experience" class="nav-link scrollto"><i class="bx bx-briefcase"></i> <span class="navspan">Experience</span></a></li>
+                <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-code-block"></i> <span class="navspan">Projects</span></a></li>
+                <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span class="navspan">Contact</span></a></li>
                 <li style="cursor: pointer;" onclick="darkmodeFunction(this)"><a class="nav-link scrollto"><i class="bx bx-moon" id="moonicon"></i><span id="dmSpan">Dark mode</span></a></li>
             </ul>
         </nav>
@@ -60,12 +59,11 @@
     <!-- ======= Hero Section ======= -->
     <section id="hero" class="d-flex flex-column justify-content-center">
         <div class="container" data-aos="zoom-in" data-aos-delay="100">
-            <h1>Thishan Thanushka Jayawardena</h1>
-            <p>I'm a <span class="typed" data-typed-items="Software Engineer, Freelancer"></span></p>
+            <h1 id="homeh1">Thishan Thanushka Jayawardena</h1>
+            <p id="homep">I'm a <span class="typed" data-typed-items="Software Engineer, UI/UX designer, Mobile Application Developer, Freelancer"></span></p>
             <div class="social-links">
-                <a href="https://twitter.com/thishantj1" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="https://www.instagram.com/thishan_tj/" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/thishan-thanushka-jayawardena-6b9790111/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://www.instagram.com/thishan_tj/" class="instagram" target="_blank" rel="noopener noreferrer"><i class="bx bxl-instagram" id="socialmediaiconinsta"></i></a>
+                <a href="https://www.linkedin.com/in/thishan-thanushka-jayawardena-6b9790111/" class="linkedin" target="_blank" rel="noopener noreferrer"><i class="bx bxl-linkedin" id="socialmediaiconlinkedin"></i></a>
             </div>
         </div>
     </section>
@@ -89,11 +87,11 @@
                         <img src="assets/img/me.jpeg" class="img-fluid" alt="" id="myPhoto">
                     </div>
                     <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-                        <h3>Software engineer</h3>
+                        <!-- <h3>Software engineer</h3> -->
                         <div class="row">
                             <div class="col-lg-6">
                                 <ul>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>4th November 2000</span></li>
+                                    <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>4th November, 2000</span></li>
                                     <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Tampere, Finland</span></li>
                                 </ul>
                             </div>
@@ -104,8 +102,8 @@
                                 </ul>
                             </div>
                         </div>
-                        <p>
-                            Highly motivated IT professional with proven expertise in software development, research, and data analysis. Dedicated to delivering innovative solutions and driving business success. Pursuing a Master of Science in Software, Web, and Cloud and a Bachelor’s in information technology, with recognition for best performance in the IT stream. Committed to leveraging technical skills and creativity to contribute to the development of customer-centric products.
+                        <p style="text-align: justify;">
+                            Embarking on a journey to craft digital excellence, I am an IT virtuoso with a flair for weaving seamless UI/UX experiences, mastering the intricacies of mobile applications, and conquering the realms of full-stack development. Currently pursuing a Master's in Software, Web, and Cloud, my passion is not just in writing code but in creating digital symphonies that resonate with users. From designing to developing feature-rich mobile experiences, my journey is a tapestry of success stories. A proud recipient of the Best Performance Award in Information Technology, my commitment is not just to meet expectations but to exceed them, leaving an indelible mark on the digital landscape. Join me in the pursuit of transforming ideas into extraordinary digital realities.
                         </p>
                     </div>
                 </div>
@@ -234,7 +232,7 @@
                     <h2>Education</h2>
                 </div>
 
-                    <div class="edu-blog-card">
+                    <div class="edu-blog-card" id="edu-blog-card">
                         <input type="radio" name="select" id="tap-1" checked>
                         <input type="radio" name="select" id="tap-2">
                         <input type="radio" name="select" id="tap-3">
@@ -277,7 +275,7 @@
                             <span>Research</span>
                             <div class="edu-text">
                                 <b>Topic	    :</b>	i-finepay: Platform Independent on the Spot Traffic Payment Solution<br>
-                                <b>DOI	        :</b>	<a href="https://www.ijcaonline.org/archives/volume183/number33/navamalika-2021-ijca-921720.pdf">10.5120/ijca2021921720</a>
+                                <b>DOI	        :</b>	<a href="https://www.ijcaonline.org/archives/volume183/number33/navamalika-2021-ijca-921720.pdf" target="_blank" rel="noopener noreferrer">10.5120/ijca2021921720</a>
                             </div>
                         </div>
                         </div>
@@ -333,9 +331,20 @@
 
                 </div>
                 <div class="timeline"  id="expr">
-                    <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s " data-aos="fade-right">
+                    <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s " data-aos="fade-right">
                         <div class="timeline-text">
-                            <div class="timeline-date ">2023 May - 2023 August</div>
+                            <div class="timeline-date" id="timeline-date">2023 September - 2023 October</div>
+                            <h2>Research Assistant</h2>
+                            <h4>Tampere University, Tampere, Finland</h4>
+                            <ul>
+                                <li>Web application development</li>
+                                <li>UI/UX designing</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s " data-aos="fade-left">
+                        <div class="timeline-text">
+                            <div class="timeline-date" id="timeline-date">2023 May - 2023 August</div>
                             <h2>Intern</h2>
                             <h4>Valopi Oy, Tampere, Finland</h4>
                             <ul>
@@ -349,7 +358,7 @@
                     </div>
                     <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s " data-aos="fade-right">
                         <div class="timeline-text">
-                            <div class="timeline-date ">2021 September - 2022 March</div>
+                            <div class="timeline-date" id="timeline-date">2021 September - 2022 March</div>
                             <h2>Associate Engineer Technology</h2>
                             <h4>Virtusa PVT LTD, Colombo, Sri Lanka</h4>
                             <ul>
@@ -359,7 +368,7 @@
                     </div>
                     <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s " data-aos="fade-left">
                         <div class="timeline-text">
-                            <div class="timeline-date ">2021 January - 2021 July</div>
+                            <div class="timeline-date" id="timeline-date">2021 January - 2021 July</div>
                             <h2>Software Engineering Trainee</h2>
                             <h4>Sri Lanka Post, Colombo, Sri Lanka</h4>
                             <ul>
@@ -373,7 +382,7 @@
                     </div>
                     <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s " data-aos="fade-right">
                         <div class="timeline-text">
-                            <div class="timeline-date ">2019 November – 2020 January</div>
+                            <div class="timeline-date" id="timeline-date">2019 November – 2020 January</div>
                             <h2>Developer and system maintainer</h2>
                             <h4>Brien Holden Vision Institute, Wattala, Sri Lanka</h4>
                             <ul>
@@ -390,91 +399,162 @@
         </div>
         <!-- Job Experience End -->
 
-        <!-- ======= Services Section ======= -->
-        <section id="services" class="services">
+        <!-- ======= Portfolio Section ======= -->
+        <section id="portfolio" class="portfolio">
             <div class="container">
 
-                <div class="section-title " data-aos="zoom-in">
-                    <h2>Projects</h2>
+            <div class="section-title">
+                <h2>Projects</h2>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12 d-flex justify-content-center">
+                <ul id="portfolio-flters">
+                    <li data-filter="*" class="filter-active portfoliofilter">All</li>
+                    <li data-filter=".filter-web" class="portfoliofilter">Web</li>
+                    <li data-filter=".filter-mobile" class="portfoliofilter">Mobile</li>
+                    <li data-filter=".filter-design" class="portfoliofilter">Design</li>
+                    <li data-filter=".filter-iot" class="portfoliofilter">IoT</li>
+                </ul>
+                </div>
+            </div>
+
+            <div class="row portfolio-container">
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                <div class="portfolio-wrap">
+                    <img src="assets/img/reilu.png" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                    <h4>Reilu media navigator</h4>
+                    <p>Web</p>
+                    <div class="portfolio-links">
+                        <a href="assets/portfolio/reilu.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                    </div>
+                    </div>
+                </div>
                 </div>
 
-                <div class="row">
-
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="flip-down" data-aos-delay="100">
-                        <div class="icon-box iconbox-blue">
-                            <div class="icon " style="background: #fff;">
-                                <img src="assets/img/ifine.png" class="img-fluid" alt="">
-                            </div>
-                            <h4><a href="" onclick="return false;">iFinePay</a></h4>
-                            <p>In this project, we developed an automated traffic fine payment system using image processing. There were two mobile applications and two web applications built into this project. 
-                                <br><br><I style="color: black;">Technologies: HTML, CSS, PHP, Flutter, Google Cloud Vision</I></p>
-                        </div>
+                <div class="col-lg-4 col-md-6 portfolio-item filter-design">
+                <div class="portfolio-wrap">
+                    <img src="assets/img/journal.png" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                    <h4>Bullet journalr</h4>
+                    <p>Design</p>
+                    <div class="portfolio-links">
+                        <a href="assets/portfolio/journal.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
                     </div>
-
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="flip-down" data-aos-delay="200">
-                        <div class="icon-box iconbox-orange">
-                            <div class="icon" style="background: #fff;">
-                                <img src="assets/img/allset.png" class="img-fluid" alt="">
-                            </div>
-                            <h4><a href="" onclick="return false;">Manual form application</a></h4>
-                            <p>In this project, we developed a web application which enables you to create forms and download them and upload handwritten forms to the system which then will generate statistics and results based on that.
-                                <br><br><I style="color: black;">Technologies: React.js, Node.js, Express.js, Mongo DB, C#, AForge.NET</I></p>
-                        </div>
                     </div>
+                </div>
+                </div>
 
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="flip-down" data-aos-delay="300">
-                        <div class="icon-box iconbox-pink">
-                            <div class="icon " style="background: #fff;">
-                                <img src="assets/img/tms.png" class="img-fluid" alt="">
-                            </div>
-                            <h4><a href="" onclick="return false;">Time table management system</a></h4>
-                            <p>A human computer interaction project, where the original software was re-designed with additional features and better UI and UX.
-                                <br><br><I style="color: black;">Technologies: Java, MySQL</I>
-                            </p>
-                        </div>
+                <div class="col-lg-4 col-md-6 portfolio-item filter-iot">
+                <div class="portfolio-wrap">
+                    <img src="assets/img/iot.png" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                    <h4>Automated plant watering system</h4>
+                    <p>IoT</p>
+                    <div class="portfolio-links">
+                        <a href="assets/portfolio/plantwatering.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
                     </div>
-
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 " data-aos="flip-down" data-aos-delay="100">
-                        <div class="icon-box iconbox-yellow">
-                            <div class="icon " style="background: #fff;">
-                                <img src="assets/img/stms.png" class="img-fluid" alt="">
-                            </div>
-                            <h4><a href="" onclick="return false;">Student management system</a></h4>
-                            <p>A student management software was developed based on a client's need as a desktop executable software for a pre-school.
-                                <br><br><I style="color: black;">Technologies: Java, MySQL</I>
-                            </p>
-                        </div>
                     </div>
+                </div>
+                </div>
 
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="flip-down" data-aos-delay="200">
-                        <div class="icon-box iconbox-red ">
-                            <div class="icon " style="background: #fff;">
-                                <img src="assets/img/ros.png" class="img-fluid" alt="">
-                            </div>
-                            <h4><a href="" onclick="return false;">Restaurant ordering system</a></h4>
-                            <p>A mobile application develped to be utilised in a Restaurant for ordering food.
-                                <br><br><I style="color: black;">Technologies: Android(Java), SQLite</I>
-                            </p>
-                        </div>
+                <div class="col-lg-4 col-md-6 portfolio-item filter-design">
+                <div class="portfolio-wrap">
+                    <img src="assets/img/cafe.png" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                    <h4>Cafe app</h4>
+                    <p>Design</p>
+                    <div class="portfolio-links">
+                        <a href="assets/portfolio/cafeapp.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
                     </div>
-
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="flip-down" data-aos-delay="300">
-                        <div class="icon-box iconbox-teal ">
-                            <div class="icon " style="background: #fff;">
-                                <img src="assets/img/oso.png" class="img-fluid" alt="">
-                            </div>
-                            <h4><a href="" onclick="return false;">Online service ordering system</a></h4>
-                            <p>A web application which was designed to depict a service ordering web application for users.
-                                <br><br><I style="color: black;">Technologies: Java, MySQL, HTML, CSS, JS</I>
-                            </p>
-                        </div>
                     </div>
+                </div>
+                </div>
 
+                <div class="col-lg-4 col-md-6 portfolio-item filter-mobile">
+                <div class="portfolio-wrap">
+                    <img src="assets/img/ims.png" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                    <h4>Inventory management system</h4>
+                    <p>Web</p>
+                    <div class="portfolio-links">
+                        <a href="assets/portfolio/inventorymanagement.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-design">
+                <div class="portfolio-wrap">
+                    <img src="assets/img/store.png" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                    <h4>Web store</h4>
+                    <p>Design</p>
+                    <div class="portfolio-links">
+                        <a href="assets/portfolio/webstore.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-design">
+                <div class="portfolio-wrap">
+                    <img src="assets/img/parking.png" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                    <h4>Parking app</h4>
+                    <p>Design</p>
+                    <div class="portfolio-links">
+                        <a href="assets/portfolio/parkingapp.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-mobile">
+                <div class="portfolio-wrap">
+                    <img src="assets/img/ifine.png" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                    <h4>iFinePay</h4>
+                    <p>Mobile</p>
+                    <div class="portfolio-links">
+                        <a href="assets/portfolio/ifinepay.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                <div class="portfolio-wrap">
+                    <img src="assets/img/allset.png" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                    <h4>Manual form application</h4>
+                    <p>Web</p>
+                    <div class="portfolio-links">
+                        <a href="assets/portfolio/allset.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-design">
+                <div class="portfolio-wrap">
+                    <img src="assets/img/travel.png" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                    <h4>Travel website</h4>
+                    <p>Design</p>
+                    <div class="portfolio-links">
+                        <a href="assets/portfolio/travelweb.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                    </div>
+                    </div>
+                </div>
                 </div>
 
             </div>
-        </section>
-        <!-- End Services Section -->
+
+            </div>
+        </section><!-- End Portfolio Section -->
 
 
 
@@ -528,7 +608,7 @@
 
 
     <div id="preloader "></div>
-    <a href="# " class="back-to-top d-flex align-items-center justify-content-center "><i class="bi bi-arrow-up-short "></i></a>
+    <a href="#hero" class="back-to-top d-flex align-items-center justify-content-center "><i class="bi bi-arrow-up-short "></i></a>
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/aos/aos.js "></script>
@@ -543,27 +623,92 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js "></script>
-
     <script>
         function darkmodeFunction(x) {
             var element = document.body;
             document.getElementById("moonicon").classList.toggle("bx-sun");
 
             if (element.classList != "dark-mode") {
+
+                localStorage.setItem("mode", "dark");
+
                 document.getElementById("dmSpan").innerHTML = "Light mode";
+
+                document.getElementById("hero").style["background"] = "url('/assets/img/coverdark.jpg') top right no-repeat";
+                document.getElementById("hero").style["background-size"] = "cover";
+
+                document.getElementById("homeh1").style["color"] = "white";
+                document.getElementById("homep").style["color"] = "white";
+
+                document.getElementById("socialmediaiconinsta").style["color"] = "white";
+                document.getElementById("socialmediaiconlinkedin").style["color"] = "white";
+
+                var a = document.getElementsByClassName("portfoliofilter");
+
+                for (var i = 0, len = a.length; i < len; i++) {
+                    a[i].style["color"] = "#fff";
+                }
 
                 var a = document.getElementsByClassName("timeline-text");
 
                 for (var i = 0, len = a.length; i < len; i++) {
                     a[i].style["box-shadow"] = "0 0 60px rgba(255, 255, 255, .15)";
+                    a[i].style["background-color"] = "#1F1B24";
+                }
+                document.getElementById("edu-blog-card").style["background-color"] = "#1F1B24";
+
+                var a = document.getElementsByClassName("timeline-date");
+
+                for (var i = 0, len = a.length; i < len; i++) {
+                    a[i].style["color"] = "#CF6679";
+                }
+
+                var a = document.getElementsByClassName("portfolio-wrap");
+
+                for (var i = 0, len = a.length; i < len; i++) {
+                    a[i].style["background"] = "rgb(31, 27, 36)";
                 }
             } else {
+                localStorage.setItem("mode", "light");
+
                 document.getElementById("dmSpan").innerHTML = "Dark mode";
+
+                document.getElementById("hero").style["background"] = "url('/assets/img/coverlight.jpg') top right no-repeat";
+                document.getElementById("hero").style["background-size"] = "cover";
+
+                document.getElementById("homeh1").style["color"] = "#45505b";
+                document.getElementById("homep").style["color"] = "#45505b";
+
+                document.getElementById("socialmediaiconinsta").style["color"] = "#45505b";
+                document.getElementById("socialmediaiconlinkedin").style["color"] = "#45505b";
 
                 var a = document.getElementsByClassName("timeline-text");
 
                 for (var i = 0, len = a.length; i < len; i++) {
                     a[i].style["box-shadow"] = "0 0 60px rgba(0, 0, 0, .15)";
+                    a[i].style["background-color"] = "white";
+                }
+
+                document.getElementById("edu-blog-card").style["background-color"] = "white";
+
+                var a = document.getElementsByClassName("portfolio-wrap");
+
+                for (var i = 0, len = a.length; i < len; i++) {
+                    a[i].style["background"] = "#fff";
+                    a[i].style["box-shadow"] = "0px 2px 14px 0px rgb(0 0 0 / 7.5%)";
+                    a[i].style["border-radius"] = "7px";
+                }
+
+                var a = document.getElementsByClassName("timeline-date");
+
+                for (var i = 0, len = a.length; i < len; i++) {
+                    a[i].style["color"] = "#EF233C";
+                }
+
+                var a = document.getElementsByClassName("portfoliofilter");
+
+                for (var i = 0, len = a.length; i < len; i++) {
+                    a[i].style["color"] = "#45505b";
                 }
             }
 
@@ -586,6 +731,12 @@
             }
         });
     </script>
+
+<script>
+    if(window.matchMedia("(prefers-color-scheme: dark)").matches){
+        darkmodeFunction(this);
+    }
+</script>
 </body>
 
 </html>
