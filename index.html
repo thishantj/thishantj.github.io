@@ -3,789 +3,375 @@
 
 <head>
     <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-    <title>Thishan - portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Thishan Jayawardena | UI/UX Designer and Software Developer</title>
+    <meta name="description" content="UI/UX designer and software developer in Tampere, Finland. Android apps with Material Design, Figma design systems, and mobile and web development with Flutter, React and Node.js.">
+    <meta property="og:title" content="Thishan Jayawardena | UI/UX Designer and Software Developer">
+    <meta property="og:description" content="UI/UX designer and software developer in Tampere, Finland. Android apps with Material Design, Figma design systems, and mobile and web development with Flutter, React and Node.js.">
+    <meta property="og:image" content="https://thishantj.github.io/assets/img/me.jpeg">
+    <meta name="theme-color" content="#f5f5f7" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
-    <meta content="" name="keywords">
-
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-    <!-- Vendor CSS Files -->
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-    <link href="assets/css/style.css" rel="stylesheet">
-    <link href="assets/css/style2.css" rel="stylesheet">
-
-    <link href="assets/animate/animate.min.css" rel="stylesheet">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-
-    <link href="assets/css/edu.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="assets/css/site.css" rel="stylesheet">
+    <script>try{var t=localStorage.getItem('theme');document.documentElement.setAttribute('data-theme',t||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'))}catch(e){}</script>
 </head>
 
-<body>
-
-
-    <!-- ======= Header ======= -->
-    <header id="header" class="d-flex flex-column justify-content-center">
-
-        <nav id="navbar" class="navbar nav-menu">
-            <ul>
-                <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span class="navspan">Home</span></a></li>
-                <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span class="navspan">About</span></a></li>
-                <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-book-bookmark"></i> <span class="navspan">Education</span></a></li>
-                <li><a href="#experience" class="nav-link scrollto"><i class="bx bx-briefcase"></i> <span class="navspan">Experience</span></a></li>
-                <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-code-block"></i> <span class="navspan">Projects</span></a></li>
-                <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span class="navspan">Contact</span></a></li>
-                <li style="cursor: pointer;" onclick="darkmodeFunction(this)"><a class="nav-link scrollto"><i class="bx bx-moon" id="moonicon"></i><span id="dmSpan">Dark mode</span></a></li>
-            </ul>
-        </nav>
-        <!-- .nav-menu -->
-
-    </header>
-    <!-- End Header -->
-
-    <!-- ======= Hero Section ======= -->
-    <section id="hero" class="d-flex flex-column justify-content-center">
-        <div class="container" data-aos="zoom-in" data-aos-delay="100">
-            <h1 id="homeh1">Thishan Thanushka Jayawardena</h1>
-            <p id="homep">I'm a <span class="typed" data-typed-items="Software Engineer, UI/UX designer, Mobile Application Developer, Freelancer"></span></p>
-            <div class="social-links">
-                <a href="https://www.instagram.com/thishan_tj/" class="instagram" target="_blank" rel="noopener noreferrer"><i class="bx bxl-instagram" id="socialmediaiconinsta"></i></a>
-                <a href="https://www.linkedin.com/in/thishan-thanushka-jayawardena-6b9790111/" class="linkedin" target="_blank" rel="noopener noreferrer"><i class="bx bxl-linkedin" id="socialmediaiconlinkedin"></i></a>
-            </div>
+<body id="top">
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="topbar">
+        <div class="wrap">
+            <a class="brand" href="#top">Thishan Jayawardena</a>
+            <nav class="nav" id="nav" aria-label="Sections"><a href="#work">Work</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#contact">Contact</a></nav>
+            <button class="icon-btn theme-toggle" aria-label="Switch light or dark mode"><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg></button>
+            <button class="icon-btn menu-btn" aria-label="Menu" aria-controls="nav" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg></button>
         </div>
-    </section>
-    <!-- End Hero -->
+    </header>
 
     <main id="main">
 
-        <!-- ======= About Section ======= -->
-        <section id="about" class="about">
-
-            <!-- ======= About Me ======= -->
-            <div class="about-me container">
-
-                <div class="section-title2">
-                    <h2>About</h2>
-                    <p id="learnAbtMe">Learn more about me</p>
+        <section class="hero">
+            <div class="glow" aria-hidden="true"></div>
+            <div class="wrap">
+                <img class="avatar" src="assets/img/me.jpeg" alt="Thishan Jayawardena">
+                <div class="eyebrow"><span class="dot"></span>Tampere, Finland</div>
+                <h1>UI/UX designer <span class="grad">and software developer.</span></h1>
+                <p class="lead">I design and build mobile and web apps, from user flows and Figma design systems to Android, Flutter and React code. Co-founder &amp; CTO of Asten.</p>
+                <div class="actions">
+                    <a class="btn primary" href="#work">See my work <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                    <a class="btn" href="assets/Thishan_Jayawardena_CV.pdf" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg> Download CV</a>
                 </div>
+                <div class="socials">
+                    <a class="icon-btn" href="https://www.linkedin.com/in/thishan-thanushka-jayawardena-6b9790111/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.75h4v11H3v-11Zm6.5 0h3.83v1.5h.05c.53-1 1.84-2.05 3.79-2.05 4.05 0 4.8 2.67 4.8 6.13v5.42h-4v-4.8c0-1.15-.02-2.62-1.6-2.62-1.6 0-1.84 1.25-1.84 2.54v4.88h-4v-11Z"/></svg></a>
+                    <a class="icon-btn" href="mailto:thishantj@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/></svg></a>
+                </div>
+                <div class="showcase" aria-hidden="true">
+                    <figure class="s1"><img src="assets/img/travel.png" alt=""></figure>
+                    <figure class="s2"><img src="assets/img/busstops1.png" alt=""></figure>
+                    <figure class="s3"><img src="assets/img/store.png" alt=""></figure>
+                    <figure class="s4 art"><div class="phone" aria-hidden="true"><i class="bar"></i><i class="block accent"></i><i class="row"></i><i class="row"></i><i class="row"></i><i class="fab"></i></div></figure>
+                    <figure class="s5"><img src="assets/img/iot.png" alt=""></figure>
+                </div>
+                <div class="bento">
+                    <div class="tile android reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg><strong>Android apps</strong><span>Designed or built for three companies, with Material Design</span></div>
+                    <div class="tile reveal"><i class="ico blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></i><strong>Design systems</strong><span>User flows, Figma component libraries and developer handoff</span></div>
+                    <div class="tile reveal"><i class="ico purple"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 7-5 5 5 5M16 7l5 5-5 5"/></svg></i><strong>Design and code</strong><span>Flutter, Android (Java), React and Node.js</span></div>
+                    <div class="tile reveal"><i class="ico orange"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 18a5 5 0 1 1 .9-9.9A6 6 0 0 1 19 10a4 4 0 0 1-1 8Z"/></svg></i><strong>M.Sc. Software, Web &amp; Cloud</strong><span>Tampere University. Full right to work in Finland</span></div>
+                </div>
+            </div>
+        </section>
 
+        <section class="section alt" id="work">
+            <div class="wrap">
+                <div class="section-head">
+                    <div>
+                        <div class="kicker">Selected work</div>
+                        <h2>Projects</h2>
+                    </div>
+                    <div class="filters" role="group" aria-label="Filter projects"><button class="filter" data-filter="all" aria-pressed="true">All</button><button class="filter" data-filter="android" aria-pressed="false">Android</button><button class="filter" data-filter="mobile" aria-pressed="false">Mobile</button><button class="filter" data-filter="design" aria-pressed="false">Design</button><button class="filter" data-filter="web" aria-pressed="false">Web</button><button class="filter" data-filter="iot" aria-pressed="false">IoT</button></div>
+                </div>
+                <div class="grid">
+                <div class="group-head" data-group="client"><h3>Client and research work</h3><p>Apps I designed or built for companies and research teams, plus published research.</p></div>
+                <a class="card reveal featured" href="assets/portfolio/vesko.html" data-tags="android mobile design" data-group="client">
+                    <div class="art"><span class="confidential-tag">Confidential · no screens</span><div class="phone" aria-hidden="true"><i class="bar"></i><i class="block accent"></i><i class="row"></i><i class="row"></i><i class="row"></i><i class="fab"></i></div></div>
+                    <div class="body">
+                        <div class="meta"><span class="chip android">Android</span><span class="chip">UI/UX design</span></div>
+                        <h3>Vesko</h3>
+                        <p>Android and desktop app for customers and shop owners.</p>
+                        <span class="more">Read case study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                    </div>
+                </a>
+                <a class="card reveal" href="assets/portfolio/srilankapost.html" data-tags="android mobile design" data-group="client">
+                    <div class="art"><span class="confidential-tag">Confidential · no screens</span><div class="phone" aria-hidden="true"><i class="bar"></i><i class="row"></i><i class="row"></i><div class="split"><i></i><i></i></div><i class="row accent"></i></div></div>
+                    <div class="body">
+                        <div class="meta"><span class="chip android">Android</span><span class="chip">Design &amp; development</span></div>
+                        <h3>Sri Lanka Post</h3>
+                        <p>Two native Android apps replacing paper-based postal processes.</p>
+                        <span class="more">Read case study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                    </div>
+                </a>
+                <a class="card reveal" href="assets/portfolio/valopi.html" data-tags="android mobile" data-group="client">
+                    <div class="art"><span class="confidential-tag">Confidential · no screens</span><div class="phone" aria-hidden="true"><i class="bar"></i><div class="split"><i class="accent"></i><i></i></div><i class="block"></i><div class="split"><i></i><i></i></div></div></div>
+                    <div class="body">
+                        <div class="meta"><span class="chip android">Android</span><span class="chip">Design &amp; development</span></div>
+                        <h3>Valopi</h3>
+                        <p>A 2D Android game MVP for a new product, built in Flutter.</p>
+                        <span class="more">Read case study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                    </div>
+                </a>
+                <a class="card reveal" href="assets/portfolio/ifinepay.html" data-tags="mobile" data-group="client">
+                    <div class="thumb contain"><img src="assets/img/ifine.png" alt="i-FinePay preview" loading="lazy"></div>
+                    <div class="body">
+                        <div class="meta"><span class="chip">Mobile · Research</span></div>
+                        <h3>i-FinePay</h3>
+                        <p>On-the-spot traffic fine payments, published in IJCA.</p>
+                        <span class="more">View project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                    </div>
+                </a>
+                <a class="card reveal" href="assets/portfolio/reilu.html" data-tags="web design" data-group="client">
+                    <div class="thumb"><img src="assets/img/reilu.png" alt="Reilu Media navigator preview" loading="lazy"></div>
+                    <div class="body">
+                        <div class="meta"><span class="chip">Web · Design &amp; development</span></div>
+                        <h3>Reilu Media navigator</h3>
+                        <p>A learning dashboard about fair media, for journalists.</p>
+                        <span class="more">View project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                    </div>
+                </a>
+                <div class="group-head" data-group="design"><h3>Design concepts</h3><p>Figma prototypes and redesigns for mobile, tablet, desktop and web.</p></div>
+                <a class="card reveal" href="assets/portfolio/parkingapp.html" data-tags="mobile design" data-group="design">
+                    <div class="thumb tint"><img src="assets/img/portfolio/parking1.png" alt="Parking app preview" loading="lazy"></div>
+                    <div class="body">
+                        <div class="meta"><span class="chip">Mobile design</span></div>
+                        <h3>Parking app</h3>
+                        <p>A mobile parking app prototype designed in Figma.</p>
+                        <span class="more">View project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                    </div>
+                </a>
+                <a class="card reveal" href="assets/portfolio/journal.html" data-tags="mobile design" data-group="design">
+                    <div class="thumb tint"><img src="assets/img/portfolio/journal1.png" alt="Bullet journal preview" loading="lazy"></div>
+                    <div class="body">
+                        <div class="meta"><span class="chip">Mobile design</span></div>
+                        <h3>Bullet journal</h3>
+                        <p>A gamified bullet journal app, prototyped in Figma.</p>
+                        <span class="more">View project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                    </div>
+                </a>
+                <a class="card reveal" href="assets/portfolio/cafeapp.html" data-tags="design" data-group="design">
+                    <div class="thumb tint"><img src="assets/img/portfolio/cafe1.png" alt="Cafe app preview" loading="lazy"></div>
+                    <div class="body">
+                        <div class="meta"><span class="chip">Tablet design</span></div>
+                        <h3>Cafe app</h3>
+                        <p>A tablet app for a hotel&#x27;s cafe and surf shop.</p>
+                        <span class="more">View project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                    </div>
+                </a>
+                <a class="card reveal" href="assets/portfolio/busstop.html" data-tags="design" data-group="design">
+                    <div class="thumb"><img src="assets/img/busstops1.png" alt="Proximity bus stop locator preview" loading="lazy"></div>
+                    <div class="body">
+                        <div class="meta"><span class="chip">Desktop design</span></div>
+                        <h3>Proximity bus stop locator</h3>
+                        <p>Find bus stops near playgrounds in Helsinki.</p>
+                        <span class="more">View project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                    </div>
+                </a>
+                <a class="card reveal" href="assets/portfolio/webstore.html" data-tags="design web" data-group="design">
+                    <div class="thumb"><img src="assets/img/store.png" alt="Web store redesign preview" loading="lazy"></div>
+                    <div class="body">
+                        <div class="meta"><span class="chip">Web design</span></div>
+                        <h3>Web store redesign</h3>
+                        <p>Product, order status and return views, redesigned.</p>
+                        <span class="more">View project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                    </div>
+                </a>
+                <a class="card reveal" href="assets/portfolio/travelweb.html" data-tags="design web" data-group="design">
+                    <div class="thumb"><img src="assets/img/travel.png" alt="Travel website preview" loading="lazy"></div>
+                    <div class="body">
+                        <div class="meta"><span class="chip">Web design</span></div>
+                        <h3>Travel website</h3>
+                        <p>Sri Lanka&#x27;s best destinations and stays.</p>
+                        <span class="more">View project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                    </div>
+                </a>
+                <div class="group-head" data-group="dev"><h3>Development projects</h3><p>Course projects in web development and IoT.</p></div>
+                <a class="card reveal" href="assets/portfolio/inventorymanagement.html" data-tags="web" data-group="dev">
+                    <div class="thumb"><img src="assets/img/ims.png" alt="Inventory management system preview" loading="lazy"></div>
+                    <div class="body">
+                        <div class="meta"><span class="chip">Web</span></div>
+                        <h3>Inventory management system</h3>
+                        <p>Inventory for a veterinary clinic, built in React.</p>
+                        <span class="more">View project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                    </div>
+                </a>
+                <a class="card reveal" href="assets/portfolio/allset.html" data-tags="web" data-group="dev">
+                    <div class="thumb contain"><img src="assets/img/allset.png" alt="Manual form application preview" loading="lazy"></div>
+                    <div class="body">
+                        <div class="meta"><span class="chip">Web</span></div>
+                        <h3>Manual form application</h3>
+                        <p>Paper forms in, statistics out.</p>
+                        <span class="more">View project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                    </div>
+                </a>
+                <a class="card reveal" href="assets/portfolio/plantwatering.html" data-tags="iot" data-group="dev">
+                    <div class="thumb"><img src="assets/img/iot.png" alt="Automated plant watering preview" loading="lazy"></div>
+                    <div class="body">
+                        <div class="meta"><span class="chip">IoT</span></div>
+                        <h3>Automated plant watering</h3>
+                        <p>Arduino and sensors that water plants for you.</p>
+                        <span class="more">View project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                    </div>
+                </a>
+                </div>
+                <p class="note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><span>The Vesko, Sri Lanka Post and Valopi apps are internal and under company confidentiality, so their pages describe the work without showing screens. I am happy to walk through any of them in an interview.</span></p>
+            </div>
+        </section>
+
+        <section class="section" id="experience">
+            <div class="wrap">
+                <div class="section-head">
+                    <div>
+                        <div class="kicker">Experience</div>
+                        <h2>Where I have worked</h2>
+                    </div>
+                </div>
+                <div class="timeline">
+                <article class="job reveal">
+                    <div class="when">Jan 2026 – Present</div>
+                    <div>
+                        <h3>Co-founder &amp; CTO</h3>
+                        <div class="org">Asten</div>
+                        <ul><li>Co-founded an online coaching platform connecting athletes with coaches across Finland.</li><li>Lead development in a team of around 10, covering profiles, packages, search and messaging.</li><li>Designed the initial UI/UX.</li></ul>
+                    </div>
+                </article>
+                <article class="job reveal">
+                    <div class="when">Dec 2024 – Mar 2025</div>
+                    <div>
+                        <h3>Mobile App Innovator</h3>
+                        <div class="org">Escrow Livery · Malmö, Sweden</div>
+                        <ul><li>Developed the backend (Node.js, Express, PostgreSQL) and worked on the mobile application.</li></ul>
+                    </div>
+                </article>
+                <article class="job reveal">
+                    <div class="when">Mar 2024 – Mar 2025</div>
+                    <div>
+                        <h3>UI/UX Designer (freelance)</h3>
+                        <div class="org">Vesko · Finland</div>
+                        <ul><li>Main designer of the company&#x27;s Android and desktop app for both users and shop owners, using Material Design.</li><li>Created user flows, a reusable Figma component library and interactive prototypes.</li><li>Validated designs with the CEO and handed off developer-ready specs.</li></ul>
+                    </div>
+                </article>
+                <article class="job reveal">
+                    <div class="when">Sep 2023 – Oct 2023</div>
+                    <div>
+                        <h3>Research Assistant, Reilu Media</h3>
+                        <div class="org">Tampere University · Tampere</div>
+                        <ul><li>Designed, prototyped and developed the Reilu Media navigator.</li></ul>
+                    </div>
+                </article>
+                <article class="job reveal">
+                    <div class="when">May 2023 – Aug 2023</div>
+                    <div>
+                        <h3>Software Developer Intern</h3>
+                        <div class="org">Valopi Oy · Tampere</div>
+                        <ul><li>Designed and developed a 2D Android game MVP in Flutter (Flame engine).</li><li>Built client mobile and web apps in Flutter and React, and improved existing UI/UX.</li></ul>
+                    </div>
+                </article>
+                <article class="job reveal">
+                    <div class="when">Sep 2021 – Mar 2022</div>
+                    <div>
+                        <h3>Associate Engineer Technology</h3>
+                        <div class="org">Virtusa · Colombo, Sri Lanka</div>
+                        <ul><li>Trained in Pega development for enterprise workflow applications.</li></ul>
+                    </div>
+                </article>
+                <article class="job reveal">
+                    <div class="when">Jan 2021 – Jul 2021</div>
+                    <div>
+                        <h3>Software Engineering Trainee</h3>
+                        <div class="org">Sri Lanka Post · Colombo, Sri Lanka</div>
+                        <ul><li>Designed and developed two native Android apps (Java, Material Design) to replace paper-based postal processes.</li></ul>
+                    </div>
+                </article>
+                <article class="job reveal">
+                    <div class="when">Nov 2019 – Jan 2020</div>
+                    <div>
+                        <h3>System Developer (internship)</h3>
+                        <div class="org">Brien Holden Vision Institute · Sri Lanka</div>
+                        <ul><li>Built a standalone management system for the organisation&#x27;s optical showrooms.</li></ul>
+                    </div>
+                </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section alt" id="skills">
+            <div class="wrap">
+                <div class="section-head">
+                    <div>
+                        <div class="kicker">Skills</div>
+                        <h2>Tools I work with</h2>
+                    </div>
+                </div>
+                <div class="skills">
+                <div class="skill-card reveal">
+                    <h3><i class="ico blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></i>Design</h3>
+                    <div class="chips"><span class="chip">UI/UX design</span><span class="chip">Figma</span><span class="chip">User flows</span><span class="chip">Prototyping</span><span class="chip">Design systems</span><span class="chip">Accessibility</span></div>
+                </div>
+                <div class="skill-card reveal">
+                    <h3><i class="ico green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg></i>Android &amp; mobile</h3>
+                    <div class="chips"><span class="chip">Material Design</span><span class="chip">Android SDK</span><span class="chip">Java</span><span class="chip">Flutter</span><span class="chip">Dart</span></div>
+                </div>
+                <div class="skill-card reveal">
+                    <h3><i class="ico purple"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 7-5 5 5 5M16 7l5 5-5 5"/></svg></i>Web</h3>
+                    <div class="chips"><span class="chip">React</span><span class="chip">Material UI (MUI)</span><span class="chip">TypeScript</span><span class="chip">JavaScript</span><span class="chip">Node.js</span><span class="chip">Express</span><span class="chip">HTML</span><span class="chip">CSS</span></div>
+                </div>
+                <div class="skill-card reveal">
+                    <h3><i class="ico orange"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 18a5 5 0 1 1 .9-9.9A6 6 0 0 1 19 10a4 4 0 0 1-1 8Z"/></svg></i>Data, cloud &amp; other</h3>
+                    <div class="chips"><span class="chip">PostgreSQL</span><span class="chip">Python</span><span class="chip">C#/.NET</span><span class="chip">PHP</span><span class="chip">AWS</span><span class="chip">GCP</span></div>
+                </div>
+                </div>
+                <p class="note"><span>Languages: English (professional) · Finnish (A1, studying) · Sinhala (native)</span></p>
+            </div>
+        </section>
+
+        <section class="section" id="education">
+            <div class="wrap">
+                <div class="section-head">
+                    <div>
+                        <div class="kicker">Education</div>
+                        <h2>Degrees</h2>
+                    </div>
+                </div>
+                <div class="edu">
+                <div class="edu-card reveal">
+                    <img src="assets/img/tuni.png" alt="">
+                    <h3>Master of Science in Software, Web and Cloud</h3>
+                    <div class="school">Tampere University, Finland</div>
+                    <div class="years">2022 – 2024</div>
+                    <div class="extra">Thesis: <a href="https://urn.fi/URN:NBN:fi:tuni-2024111110090" target="_blank" rel="noopener noreferrer">User-Driven Product Exploration in E-Commerce Using Generative AI and Explainable NLP</a></div>
+                </div>
+                <div class="edu-card reveal">
+                    <img src="assets/img/SLIIT.png" alt="">
+                    <h3>Bachelor of Science (Hons) in Information Technology</h3>
+                    <div class="school">Sri Lanka Institute of Information Technology</div>
+                    <div class="years">2018 – 2022</div>
+                    <div class="extra">Research: <a href="https://www.ijcaonline.org/archives/volume183/number33/navamalika-2021-ijca-921720.pdf" target="_blank" rel="noopener noreferrer">i-FinePay, published in IJCA (2021)</a></div>
+                </div>
+                <div class="edu-card reveal">
+                    <img src="assets/img/curtin.jpeg" alt="">
+                    <h3>Bachelor of Science in Information Technology</h3>
+                    <div class="school">Curtin University, Australia</div>
+                    <div class="years">2018 – 2021</div>
+                    <div class="extra">Best overall performance award in the Information Technology stream</div>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section contact dark" id="contact">
+            <div class="glow" aria-hidden="true"></div>
+            <div class="wrap">
+                <h2>Let&rsquo;s work together.</h2>
+                <p>Open to UI/UX design and software development roles in Finland.</p>
+                <a class="mail" href="mailto:thishantj@gmail.com">thishantj@gmail.com</a>
                 <div class="row">
-                    <div class="col-lg-4" data-aos="fade-right">
-                        <img src="assets/img/me.jpeg" class="img-fluid" alt="" id="myPhoto">
-                    </div>
-                    <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-                        <!-- <h3>Software engineer</h3> -->
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <ul>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>November, 2000</span></li>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Tampere, Finland</span></li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-6">
-                                <ul>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>MSc in Software, Web and Cloud</span></li>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <p style="text-align: justify;">
-                            Embarking on a journey to craft digital excellence, I am an IT virtuoso with a flair for weaving seamless UI/UX experiences, mastering the intricacies of mobile applications, and conquering the realms of full-stack development. Currently pursuing a Master's in Software, Web, and Cloud, my passion is not just in writing code but in creating digital symphonies that resonate with users. From designing to developing feature-rich mobile experiences, my journey is a tapestry of success stories. A proud recipient of the Best Performance Award in Information Technology, my commitment is not just to meet expectations but to exceed them, leaving an indelible mark on the digital landscape. Join me in the pursuit of transforming ideas into extraordinary digital realities.
-                        </p>
-                    </div>
+                    <a class="btn" href="tel:+358415704063"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg> +358 41 570 4063</a>
+                    <a class="btn" href="https://www.linkedin.com/in/thishan-thanushka-jayawardena-6b9790111/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.75h4v11H3v-11Zm6.5 0h3.83v1.5h.05c.53-1 1.84-2.05 3.79-2.05 4.05 0 4.8 2.67 4.8 6.13v5.42h-4v-4.8c0-1.15-.02-2.62-1.6-2.62-1.6 0-1.84 1.25-1.84 2.54v4.88h-4v-11Z"/></svg> LinkedIn</a>
+                    <a class="btn" href="assets/Thishan_Jayawardena_CV.pdf" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg> Download CV</a>
                 </div>
-
-            </div>
-            <!-- End About Me -->
-
-
-
-
-            <!-- ======= Skills  ======= -->
-            <div class="skills container">
-
-                <div class="section-title2">
-                    <h2>Skills</h2>
-                </div>
-
-                <div class="row skills-content">
-
-                    <div class="col-lg-6">
-
-                        <div class="progress">
-                            <span class="skill">UI/UX <i class="val">90%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-
-                        <div class="progress">
-                            <span class="skill">Flutter <i class="val">90%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-
-                        <div class="progress">
-                            <span class="skill">Java <i class="val">90%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-
-                        <div class="progress">
-                            <span class="skill">HTML <i class="val">90%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-
-                        <div class="progress">
-                            <span class="skill">CSS <i class="val">90%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-
-                        <div class="progress">
-                            <span class="skill">C/C++ <i class="val">80%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-
-                        <div class="progress">
-                            <span class="skill">PHP <i class="val">80%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="col-lg-6">
-
-                        <div class="progress">
-                            <span class="skill">Android <i class="val">80%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-
-                        <div class="progress">
-                            <span class="skill">React JS <i class="val">75%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-
-                        <div class="progress">
-                            <span class="skill">JavaScript <i class="val">75%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-
-                        <div class="progress">
-                            <span class="skill">C#/.Net <i class="val">75%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-
-                        <div class="progress">
-                            <span class="skill">Python <i class="val">70%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-
-                        <div class="progress">
-                            <span class="skill">Node JS <i class="val">70%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-
-                        <div class="progress">
-                            <span class="skill">Spring boot <i class="val">65%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-            <!-- End Skills -->
-
-        </section>
-        <!-- End About Section -->
-
-
-        <!-- ======= Resume Section ======= -->
-        <section id="resume" class="resume">
-            <div class="container" data-aos="fade-up">
-
-                <div class="section-title">
-                    <h2>Education</h2>
-                </div>
-
-                    <div class="edu-blog-card" id="edu-blog-card">
-                        <input type="radio" name="select" id="tap-1" checked>
-                        <input type="radio" name="select" id="tap-2">
-                        <input type="radio" name="select" id="tap-3">
-                        <input type="radio" name="select" id="tap-4">
-                        <input type="radio" name="select" id="tap-5">
-                        <input type="checkbox" id="imgTap">
-                        <div class="edu-sliders">
-                            <label for="tap-1" class="tap tap-1"></label>
-                            <label for="tap-2" class="tap tap-2"></label>
-                            <label for="tap-3" class="tap tap-3"></label>
-                            <label for="tap-4" class="tap tap-4"></label>
-                            <label for="tap-5" class="tap tap-5"></label>
-                        </div>
-                        <div class="edu-inner-part">
-                            <label for="edu-imgTap" class="edu-img">
-                                <img class="edu-img-1" src="assets/img/tuni.png">
-                                <span class="edu-uni-1">Tampere University</span>
-                                <p class="edu-date-1">2022 - 2024</p>
-                            </label>
-                        <div class="edu-content edu-content-1">
-                            <div class="edu-title">
-                                Master of Science in Software, Web and Cloud
-                            </div>
-                            <span>Thesis</span>
-                            <div class="edu-text">
-                                <b>Topic	    :</b>	<a href="https://urn.fi/URN:NBN:fi:tuni-2024111110090" target="_blank" rel="noopener noreferrer">User-Driven Product Exploration in E-Commerce Using Generative AI and Explainable NLP</a>
-                            </div>
-                        </div>
-                        </div>
-                        <div class="edu-inner-part">
-                        <label for="imgTap" class="edu-img">
-                                <img class="edu-img-2" src="assets/img/SLIIT.png">
-                                <span class="edu-uni-2">Sri Lankan Institute of Information Technology</span>
-                                <p class="edu-date-2">2018 - 2022</p>
-                        </label>
-                        <div class="edu-content edu-content-2">
-                            <div class="edu-title">
-                                Bachelor of Science (Hons.) in Information Technology
-                            </div>
-                            <span>Research</span>
-                            <div class="edu-text">
-                                <b>Topic	    :</b>	i-finepay: Platform Independent on the Spot Traffic Payment Solution<br>
-                                <b>DOI	        :</b>	<a href="https://www.ijcaonline.org/archives/volume183/number33/navamalika-2021-ijca-921720.pdf" target="_blank" rel="noopener noreferrer">10.5120/ijca2021921720</a>
-                            </div>
-                        </div>
-                        </div>
-                        <div class="edu-inner-part">
-                        <label for="imgTap" class="edu-img">
-                                <img class="edu-img-3" src="assets/img/curtin.jpeg">
-                                <span class="edu-uni-3">Curtin University</span>
-                                <p class="edu-date-3">2018 - 2021</p>
-                        </label>
-                        <div class="edu-content edu-content-3">
-                            <div class="edu-title">
-                                Bachelor of Science in Information Technology
-                            </div>
-                            <span>Awards:</span>
-                            <div class="edu-text">
-                                Best overall performance award in Information Technology stream
-                            </div>
-                        </div>
-                        </div>
-                        <div class="edu-inner-part">
-                        <label for="imgTap" class="edu-img">
-                                <img class="edu-img-4" src="assets/img/bcs.png">
-                                <span class="edu-uni-4">British Computer Society</span>
-                                <p class="edu-date-4">2015 - 2019</p>
-                        </label>
-                        <div class="edu-content edu-content-4">
-                            <div class="edu-title">
-                                Diploma in British Computer Society
-                            </div>
-                        </div>
-                        </div>
-                        <div class="edu-inner-part">
-                        <label for="imgTap" class="edu-img">
-                                <img class="edu-img-5" src="assets/img/esoft.png">
-                                <span class="edu-uni-5">Esoft</span>
-                                <p class="edu-date-5">2015 - 2015</p>
-                        </label>
-                        <div class="edu-content edu-content-5">
-                            <div class="edu-title">
-                                Diploma in Information Technology
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-        </section>
-        <!-- End Resume Section -->
-
-        <!-- Experience Start -->
-        <div class="experience" id="experience">
-            <div class="container">
-                <div class="section-title " data-aos="zoom-in">
-                    <h2>Experience</h2>
-
-                </div>
-                <div class="timeline"  id="expr">
-                    <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s " data-aos="fade-right">
-                        <div class="timeline-text">
-                            <div class="timeline-date" id="timeline-date">2024 December - 2025 March</div>
-                            <h2>Mobile App Innovator</h2>
-                            <h4>Escrow Livery, Malmo, Sweden</h4>
-                            <ul>
-                                <li>Mobile application development</li>
-                                <li>UI/UX designing</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s " data-aos="fade-left">
-                        <div class="timeline-text">
-                            <div class="timeline-date" id="timeline-date">2024 March - 2025 March</div>
-                            <h2>Freelance UI/UX Engineer</h2>
-                            <h4>Vesko, Finland</h4>
-                            <ul>
-                                <li>UI/UX development</li>
-                                <li>Prototyping</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s " data-aos="fade-right">
-                        <div class="timeline-text">
-                            <div class="timeline-date" id="timeline-date">2023 September - 2023 October</div>
-                            <h2>Research Assistant</h2>
-                            <h4>Tampere University, Tampere, Finland</h4>
-                            <ul>
-                                <li>Web application development</li>
-                                <li>UI/UX designing</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s " data-aos="fade-left">
-                        <div class="timeline-text">
-                            <div class="timeline-date" id="timeline-date">2023 May - 2023 August</div>
-                            <h2>Intern</h2>
-                            <h4>Valopi Oy, Tampere, Finland</h4>
-                            <ul>
-                                <li>Software development</li>
-                                <li>Web application development</li>
-                                <li>Mobile application development</li>
-                                <li>Digital game development</li>
-                                <li>Assist and fix all software related issue</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s " data-aos="fade-right">
-                        <div class="timeline-text">
-                            <div class="timeline-date" id="timeline-date">2021 September - 2022 March</div>
-                            <h2>Associate Engineer Technology</h2>
-                            <h4>Virtusa PVT LTD, Colombo, Sri Lanka</h4>
-                            <ul>
-                                <li>Trainee PEGA developer.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s " data-aos="fade-left">
-                        <div class="timeline-text">
-                            <div class="timeline-date" id="timeline-date">2021 January - 2021 July</div>
-                            <h2>Software Engineering Trainee</h2>
-                            <h4>Sri Lanka Post, Colombo, Sri Lanka</h4>
-                            <ul>
-                                <li>Designed prototypes of the mobile applications.</li>
-                                <li>Designed and developed the interfaces of the mobile applications.</li>
-                                <li>Database connections with both SQL and noSQL.</li>
-                                <li>Defined CRUD functionality and user privileges.</li>
-                                <li>Tested system submitted to the supervisor.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s " data-aos="fade-right">
-                        <div class="timeline-text">
-                            <div class="timeline-date" id="timeline-date">2019 November – 2020 January</div>
-                            <h2>Developer and system maintainer</h2>
-                            <h4>Brien Holden Vision Institute, Wattala, Sri Lanka</h4>
-                            <ul>
-                                <li>Developed a fully automated management system to be used in optical showrooms of the organisation.</li>
-                                <li>Managed the full system and maintained it to keep results upto date.</li>
-                                <li>Actively participated in out-reach activities.</li>
-                                <li>Assisted to employee recruitment process of the organisation.</li>
-                                <li>Helped in developing the monthly and quarterly reports of the organisation.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Job Experience End -->
-
-        <!-- ======= Portfolio Section ======= -->
-        <section id="portfolio" class="portfolio">
-            <div class="container">
-
-            <div class="section-title">
-                <h2>Projects</h2>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-12 d-flex justify-content-center">
-                <ul id="portfolio-flters">
-                    <li data-filter="*" class="filter-active portfoliofilter">All</li>
-                    <li data-filter=".filter-web" class="portfoliofilter">Web</li>
-                    <li data-filter=".filter-mobile" class="portfoliofilter">Mobile</li>
-                    <li data-filter=".filter-design" class="portfoliofilter">Design</li>
-                    <li data-filter=".filter-iot" class="portfoliofilter">IoT</li>
-                </ul>
-                </div>
-            </div>
-
-            <div class="row portfolio-container">
-
-                <div class="col-lg-4 col-md-6 portfolio-item filter-design">
-                    <div class="portfolio-wrap">
-                        <img src="assets/img/busstops1.png" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                        <h4>Proximity Bus stop locator</h4>
-                        <p>Design</p>
-                        <div class="portfolio-links">
-                            <a href="assets/portfolio/busstop.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                        </div>
-                        </div>
-                    </div>
-                    </div>
-
-                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                <div class="portfolio-wrap">
-                    <img src="assets/img/reilu.png" class="img-fluid" alt="">
-                    <div class="portfolio-info">
-                    <h4>Reilu media navigator</h4>
-                    <p>Web</p>
-                    <div class="portfolio-links">
-                        <a href="assets/portfolio/reilu.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                    </div>
-                    </div>
-                </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 portfolio-item filter-design">
-                <div class="portfolio-wrap">
-                    <img src="assets/img/journal.png" class="img-fluid" alt="">
-                    <div class="portfolio-info">
-                    <h4>Bullet journal</h4>
-                    <p>Design</p>
-                    <div class="portfolio-links">
-                        <a href="assets/portfolio/journal.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                    </div>
-                    </div>
-                </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 portfolio-item filter-iot">
-                <div class="portfolio-wrap">
-                    <img src="assets/img/iot.png" class="img-fluid" alt="">
-                    <div class="portfolio-info">
-                    <h4>Automated plant watering system</h4>
-                    <p>IoT</p>
-                    <div class="portfolio-links">
-                        <a href="assets/portfolio/plantwatering.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                    </div>
-                    </div>
-                </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 portfolio-item filter-design">
-                <div class="portfolio-wrap">
-                    <img src="assets/img/cafe.png" class="img-fluid" alt="">
-                    <div class="portfolio-info">
-                    <h4>Cafe app</h4>
-                    <p>Design</p>
-                    <div class="portfolio-links">
-                        <a href="assets/portfolio/cafeapp.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                    </div>
-                    </div>
-                </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                <div class="portfolio-wrap">
-                    <img src="assets/img/ims.png" class="img-fluid" alt="">
-                    <div class="portfolio-info">
-                    <h4>Inventory management system</h4>
-                    <p>Web</p>
-                    <div class="portfolio-links">
-                        <a href="assets/portfolio/inventorymanagement.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                    </div>
-                    </div>
-                </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 portfolio-item filter-design">
-                <div class="portfolio-wrap">
-                    <img src="assets/img/store.png" class="img-fluid" alt="">
-                    <div class="portfolio-info">
-                    <h4>Web store</h4>
-                    <p>Design</p>
-                    <div class="portfolio-links">
-                        <a href="assets/portfolio/webstore.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                    </div>
-                    </div>
-                </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 portfolio-item filter-design">
-                <div class="portfolio-wrap">
-                    <img src="assets/img/parking.png" class="img-fluid" alt="">
-                    <div class="portfolio-info">
-                    <h4>Parking app</h4>
-                    <p>Design</p>
-                    <div class="portfolio-links">
-                        <a href="assets/portfolio/parkingapp.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                    </div>
-                    </div>
-                </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 portfolio-item filter-mobile">
-                <div class="portfolio-wrap">
-                    <img src="assets/img/ifine.png" class="img-fluid" alt="">
-                    <div class="portfolio-info">
-                    <h4>iFinePay</h4>
-                    <p>Mobile</p>
-                    <div class="portfolio-links">
-                        <a href="assets/portfolio/ifinepay.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                    </div>
-                    </div>
-                </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                <div class="portfolio-wrap">
-                    <img src="assets/img/allset.png" class="img-fluid" alt="">
-                    <div class="portfolio-info">
-                    <h4>Manual form application</h4>
-                    <p>Web</p>
-                    <div class="portfolio-links">
-                        <a href="assets/portfolio/allset.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                    </div>
-                    </div>
-                </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 portfolio-item filter-design">
-                <div class="portfolio-wrap">
-                    <img src="assets/img/travel.png" class="img-fluid" alt="">
-                    <div class="portfolio-info">
-                    <h4>Travel website</h4>
-                    <p>Design</p>
-                    <div class="portfolio-links">
-                        <a href="assets/portfolio/travelweb.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                    </div>
-                    </div>
-                </div>
-                </div>
-
-            </div>
-
-            </div>
-        </section><!-- End Portfolio Section -->
-
-
-
-        <!-- ======= Contact Section ======= -->
-        <section id="contact" class="contact">
-            <div class="container " data-aos="fade-up ">
-
-                <div class="section-title ">
-                    <h2>Contact</h2>
-                </div>
-
-                <div class="row mt-1" style="margin-bottom: 5rem;">
-
-                    <div class="col-lg-4" style="width: 100%;">
-                        <div class="info ">
-                            <div class="address" id="contact-address">
-                                <i class="bi bi-geo-alt "></i>
-                                <h4>Location:</h4>
-                                <p>Tampere, Finland</p>
-                            </div>
-
-                            <div class="email" id="contact-email">
-                                <i class="bi bi-envelope "></i>
-                                <h4>Email:</h4>
-                                <p>thishantj@gmail.com</p>
-                            </div>
-
-                            <div class="phone" id="contact-tel">
-                                <i class="bi bi-phone "></i>
-                                <h4>Call:</h4>
-                                <p>+358 41 570 4063</p>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div style="margin-top: 10rem; font-size: x-small; text-align: center;">
-                 ~ Designed and developed by ~ <p><b style="color: #00a2ff;">Thishan Thanushka Jayawardena</b></p>
             </div>
         </section>
-        <!-- End Contact Section -->
 
     </main>
-    <!-- End #main -->
 
+    <footer>
+        <div class="wrap">
+            <span>&copy; 2026 Thishan Jayawardena</span>
+            <span>Designed and built by Thishan</span>
+        </div>
+    </footer>
 
-
-    <div id="preloader "></div>
-    <a href="#hero" class="back-to-top d-flex align-items-center justify-content-center "><i class="bi bi-arrow-up-short "></i></a>
-
-    <!-- Vendor JS Files -->
-    <script src="assets/vendor/aos/aos.js "></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js "></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js "></script>
-    <script src="assets/vendor/php-email-form/validate.js "></script>
-    <script src="assets/vendor/purecounter/purecounter.js "></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js "></script>
-    <script src="assets/vendor/typed.js/typed.min.js "></script>
-    <script src="assets/vendor/waypoints/noframework.waypoints.js "></script>
-
-    <!-- Template Main JS File -->
-    <script src="assets/js/main.js "></script>
-    <script>
-        function darkmodeFunction(x) {
-            var element = document.body;
-            document.getElementById("moonicon").classList.toggle("bx-sun");
-
-            if (element.classList != "dark-mode") {
-
-                localStorage.setItem("mode", "dark");
-
-                document.getElementById("dmSpan").innerHTML = "Light mode";
-
-                document.getElementById("hero").style["background"] = "url('/assets/img/coverdark.jpg') top right no-repeat";
-                document.getElementById("hero").style["background-size"] = "cover";
-
-                document.getElementById("homeh1").style["color"] = "white";
-                document.getElementById("homep").style["color"] = "white";
-
-                document.getElementById("socialmediaiconinsta").style["color"] = "white";
-                document.getElementById("socialmediaiconlinkedin").style["color"] = "white";
-
-                var a = document.getElementsByClassName("portfoliofilter");
-
-                for (var i = 0, len = a.length; i < len; i++) {
-                    a[i].style["color"] = "#fff";
-                }
-
-                var a = document.getElementsByClassName("timeline-text");
-
-                for (var i = 0, len = a.length; i < len; i++) {
-                    a[i].style["box-shadow"] = "0 0 60px rgba(255, 255, 255, .15)";
-                    a[i].style["background-color"] = "#1F1B24";
-                }
-                document.getElementById("edu-blog-card").style["background-color"] = "#1F1B24";
-
-                var a = document.getElementsByClassName("timeline-date");
-
-                for (var i = 0, len = a.length; i < len; i++) {
-                    a[i].style["color"] = "#CF6679";
-                }
-
-                var a = document.getElementsByClassName("portfolio-wrap");
-
-                for (var i = 0, len = a.length; i < len; i++) {
-                    a[i].style["background"] = "rgb(31, 27, 36)";
-                }
-            } else {
-                localStorage.setItem("mode", "light");
-
-                document.getElementById("dmSpan").innerHTML = "Dark mode";
-
-                document.getElementById("hero").style["background"] = "url('/assets/img/coverlight.jpg') top right no-repeat";
-                document.getElementById("hero").style["background-size"] = "cover";
-
-                document.getElementById("homeh1").style["color"] = "#45505b";
-                document.getElementById("homep").style["color"] = "#45505b";
-
-                document.getElementById("socialmediaiconinsta").style["color"] = "#45505b";
-                document.getElementById("socialmediaiconlinkedin").style["color"] = "#45505b";
-
-                var a = document.getElementsByClassName("timeline-text");
-
-                for (var i = 0, len = a.length; i < len; i++) {
-                    a[i].style["box-shadow"] = "0 0 60px rgba(0, 0, 0, .15)";
-                    a[i].style["background-color"] = "white";
-                }
-
-                document.getElementById("edu-blog-card").style["background-color"] = "white";
-
-                var a = document.getElementsByClassName("portfolio-wrap");
-
-                for (var i = 0, len = a.length; i < len; i++) {
-                    a[i].style["background"] = "#fff";
-                    a[i].style["box-shadow"] = "0px 2px 14px 0px rgb(0 0 0 / 7.5%)";
-                    a[i].style["border-radius"] = "7px";
-                }
-
-                var a = document.getElementsByClassName("timeline-date");
-
-                for (var i = 0, len = a.length; i < len; i++) {
-                    a[i].style["color"] = "#EF233C";
-                }
-
-                var a = document.getElementsByClassName("portfoliofilter");
-
-                for (var i = 0, len = a.length; i < len; i++) {
-                    a[i].style["color"] = "#45505b";
-                }
-            }
-
-            element.classList.toggle("dark-mode");
-        }
-    </script>
-
-    <script>
-        var swiper = new Swiper('.blog-slider', {
-            spaceBetween: 30,
-            effect: 'fade',
-            loop: true,
-            mousewheel: {
-                invert: false,
-            },
-            // autoHeight: true,
-            pagination: {
-                el: '.blog-slider__pagination',
-                clickable: true,
-            }
-        });
-    </script>
-
-<script>
-    if(window.matchMedia("(prefers-color-scheme: dark)").matches){
-        darkmodeFunction(this);
-    }
-</script>
+    <script src="assets/js/site.js"></script>
 </body>
 
 </html>

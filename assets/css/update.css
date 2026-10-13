@@ -1,0 +1,65 @@
+/* Skills as grouped tags */
+.skills .skill-group { margin-bottom: 24px; }
+.skills .skill-group h4 {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.skills .skill-tags { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.skills .skill-tags li {
+    padding: 5px 12px;
+    border-radius: 16px;
+    font-size: 14px;
+    background: #eef6ff;
+    color: #0b5cad;
+}
+.dark-mode .skills .skill-tags li { background: #2a2733; color: #cfe6ff; }
+
+/* Visible platform label on every project card */
+.portfolio .portfolio-wrap .platform-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 4;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    background: rgba(255, 255, 255, 0.92);
+    color: #45505b;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+    pointer-events: none;
+}
+.portfolio .portfolio-wrap .platform-badge.android { background: #3ddc84; color: #073042; }
+
+/* Confidential Android projects: case study card without screens */
+.portfolio .nda-card { background: #073042 !important; }
+.portfolio .nda-cover {
+    aspect-ratio: 8 / 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: #ffffff;
+}
+.portfolio .nda-cover i { font-size: 44px; color: #3ddc84; margin-bottom: 4px; }
+.portfolio .nda-cover h4 { font-size: 22px; font-weight: 600; margin: 0; color: #ffffff; }
+.portfolio .nda-cover p { margin: 2px 0 0; font-size: 15px; color: #d7e9f7; }
+.portfolio .nda-cover small { font-size: 13px; color: #a9c7dd; }
+.portfolio .nda-cover .nda-note { margin-top: 10px; font-size: 12px; color: #a9c7dd; font-style: italic; }
+
+/* Case study pages */
+.case-study h3 { font-size: 20px; font-weight: 600; margin-top: 24px; }
+.case-study ul { padding-left: 20px; }
+.case-study li { margin-bottom: 6px; }
+.case-study .confidential {
+    margin-top: 24px;
+    padding: 12px 16px;
+    border-left: 4px solid #3ddc84;
+    background: rgba(61, 220, 132, 0.08);
+}
