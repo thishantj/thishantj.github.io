@@ -676,6 +676,7 @@ ul {
 .art {
     position: relative;
     aspect-ratio: 16 / 10;
+    min-height: 0;
     overflow: hidden;
     display: grid;
     place-items: end center;
@@ -1246,7 +1247,7 @@ footer .wrap {
 /* Fanned showcase of real project screens */
 .showcase {
     position: relative;
-    height: clamp(200px, 34vw, 430px);
+    height: clamp(150px, 27vw, 290px);
     margin: clamp(48px, 7vw, 80px) auto 0;
     max-width: 1040px;
 }
@@ -1257,6 +1258,7 @@ footer .wrap {
     top: 0;
     width: 36%;
     aspect-ratio: 16 / 10;
+    min-height: 0; /* Safari otherwise grows the box to fit its content */
     border-radius: clamp(12px, 1.6vw, 20px);
     overflow: hidden;
     background: var(--surface-2);
@@ -1282,7 +1284,13 @@ footer .wrap {
 }
 
 .showcase .art .phone {
+    position: absolute;
+    left: 33%;
+    bottom: -14%;
     width: 34%;
+    min-height: 0;
+    margin: 0;
+    overflow: hidden;
 }
 
 .showcase.pre figure {
@@ -1298,7 +1306,7 @@ footer .wrap {
 .showcase .s1, .showcase .s5 { transition-delay: 0.16s; }
 
 @media (max-width: 700px) {
-    .showcase { height: 54vw; }
+    .showcase { height: 40vw; }
     .showcase .s1, .showcase .s5 { display: none; }
     .showcase .s3 { left: 22%; width: 56%; }
     .showcase .s2 { left: 0; width: 44%; top: 14%; }
